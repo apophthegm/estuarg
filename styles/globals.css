@@ -1,8 +1,76 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Regular.woff);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Medium.woff);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Bold.woff);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraBold.woff);
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Black.woff);
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: local("Yellowtail"), url(./fonts/Yellowtail-Regular.woff);
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  /* FONTS SIZES */
+  --font-bigger: 64px;
+  --font-semibig: 52px;
+  --h1: 32px;
+  --h2: 28px;
+  --h3: 24px;
+  --h4: 22px;
+  --h5: 20px;
+  --h6-p: 18px;
+
+  /* COLORS */
+  --black: #181616;
+  --black80: rgba(24, 22, 22, 0.8);
+  --black40: rgba(24, 22, 22, 0.4);
+  --black10: rgba(24, 22, 22, 0.1);
+  --color-primary: #faedcd;
+  --color-secondary: #63adf2;
+  --color-tertiary: #fefae0;
+  --grey-footer: #898989;
+
+  /* PADDINGS AND MARGINS */
+  --margin-one: 25px;
+  --padding-one: 10px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -12,4 +80,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }

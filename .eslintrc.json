@@ -17,6 +17,16 @@
     "react/react-in-jsx-scope": "off",
     "semi": [2, "always"],
     "quotes": ["error", "double"],
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "always",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ]
   }
 }
