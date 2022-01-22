@@ -14,7 +14,7 @@ const Header = () => {
             position: "absolute",
             objectFit: "cover",
             objectPosition: "center center",
-            filter: "brightness(0.6)",
+            filter: "brightness(0.6)"
           }}
           loop
           autoPlay

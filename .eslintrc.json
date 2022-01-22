@@ -15,6 +15,7 @@
   "plugins": ["react"],
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "semi": [2, "always"],
     "quotes": ["error", "double"],
     "space-before-function-paren": "off",
@@ -22,7 +23,7 @@
       "error",
       {
         "arrays": "never",
-        "objects": "always",
+        "objects": "never",
         "imports": "never",
         "exports": "never",
         "functions": "never"
