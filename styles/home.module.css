@@ -125,6 +125,21 @@
 
 .contentList > li {
   margin: var(--padding-one) 0;
-  max-width: 33ch;
   gap: var(--padding-one);
+}
+
+.contentList > li > p {
+  max-width: 30ch;
+  font-size: var(--h6-p);
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    flex-direction: column;
+    gap: calc(2 * var(--margin-one));
+    padding-top: calc(69px + var(--margin-one));
+  }
+  .contentList > li > p {
+    font-size: calc(3 - var(--h6-p));
+  }
 }

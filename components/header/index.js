@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./navbar";
 import style from "styles/home.module.css";
 import { Icon } from "@iconify/react";
