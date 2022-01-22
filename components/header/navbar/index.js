@@ -2,25 +2,25 @@ import style from "styles/home.module.css";
 import Link from "next/link";
 
 const Navbar = () => {
-  // let scroll = 0;
+  let scroll = 0;
 
   const menuClicked = () => {
     const menu = document.getElementById("menu");
     const menuCtn = document.getElementById("menuCtn");
-    // const body = document.body;
+    const body = document.body;
 
     menu.classList.toggle(`${style.menu}`);
     menuCtn.classList.toggle(`${style.reveal}`);
 
-    // if (body.style.position === "fixed") {
-    //   body.style = "";
-    //   window.scroll(0, scroll);
-    // } else {
-    //   scroll = window.scrollY;
-    //   body.style.top = `-${scroll}px`;
-    //   body.style.height = `calc(100% + ${scroll}px)`;
-    //   body.style.position = "fixed";
-    // }
+    if (body.style.position === "fixed") {
+      body.style = "";
+      window.scroll(0, scroll);
+    } else {
+      scroll = window.scrollY;
+      body.style.top = `-${scroll}px`;
+      body.style.height = `calc(100% + ${scroll}px)`;
+      body.style.position = "fixed";
+    }
   };
 
   return (
