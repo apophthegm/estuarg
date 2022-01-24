@@ -64,6 +64,7 @@
   /* PADDINGS AND MARGINS */
   --margin-one: 25px;
   --padding-one: 10px;
+  --margin-two: 60px;
 }
 
 html,
@@ -71,7 +72,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -98,4 +98,33 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+h2{
+  font-size: var(--h2);
+}
+
+h3{
+  font-size: var(--h3);
+}
+
+h4{
+  font-size: var(--h4);
+}
+
+h5{
+  font-size: var(--h5);
+}
+
+p, h6{
+  font-size: var(--h6-p);
+}
+
+@media screen and (max-width: 780px) {
+  p {
+    font-size: calc(var(--h6-p) - 3px);
+  }
+  h2{
+    font-size: calc(var(--h2) - 3px);
+  }
 }

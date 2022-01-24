@@ -140,7 +140,6 @@
 
 .contentList > li > p {
   max-width: 30ch;
-  font-size: var(--h6-p);
 }
 
 @media screen and (max-width: 780px) {
@@ -149,9 +148,6 @@
     gap: calc(2 * var(--margin-one));
     padding-top: calc(69px + var(--margin-one));
     pointer-events: none;
-  }
-  .contentList > li > p {
-    font-size: calc(3 - var(--h6-p));
   }
   @media screen and (max-width: 650px){
     .header{
@@ -205,5 +201,105 @@
     .navbar>li:hover{
       background-color: var(--color-secondary);
     }
+  }
+}
+
+/* ------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------HEADER END -------------------------------------------------
+--------------------------------------------------------------------------------------- */
+
+/* --------------------- ABOUT US ---------------------- */
+      /* ---------------------globals */
+.about, .whyCtn {
+  display: grid;
+}
+.about, .whyCtn {
+  margin: var(--margin-two) 0 0;
+  display: grid;
+}
+
+.about>h2, .article>h2{
+  text-align: center;
+  margin-bottom: var(--padding-one);
+}
+
+.about>p, .article>p{
+  text-align: justify;
+  padding: 0 var(--margin-one);
+}
+
+.divImg, .img, .divImg::before{
+  border-radius: 5px;
+}
+
+/* ------------- quiénes somos --------------- */
+.about{
+  min-width: 100%;
+  gap: var(--margin-one);
+  grid-template-columns: auto 55% auto;
+}
+
+.about>h2{
+  grid-column: 1 / 4;
+}
+
+.about>p{
+  grid-column: 2 / 3;
+}
+
+@media screen and (max-width: 820px){
+  .about{
+    grid-template-columns: auto 75% auto;
+  }
+  @media screen and (max-width: 500px) {
+    .about>p{
+      grid-column: 1 / 4;
+    }
+  }
+}
+
+/* ------------------ Por qué argentina --------------- */
+.whyCtn{
+  place-items: center;
+}
+
+.why{
+  width: min(1200px, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divImg{
+  flex: none;
+  width: min(300px, 55%);
+  height: fit-content;
+  margin: var(--h1);
+  position: relative;
+}
+
+.divImg::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  position: absolute;
+  bottom: var(--h1);
+  right: var(--h1);
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-one);
+}
+
+@media screen and (max-width: 800px) {
+  .why{
+    flex-direction: column;
+  }
+  .article{
+    gap: calc(var(--padding-one) + 5px);
   }
 }
