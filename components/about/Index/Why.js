@@ -6,7 +6,7 @@ import ButtonBlue from "components/ButtonBlue";
 const Why = () => {
   return <section className={styles.why}>
     <div className={styles.divImg}>
-        <Image src={resource} placeholder="blur" className={styles.img} />
+        <Image src={resource} placeholder="blur" className={styles.img} alt="obelisco buenos aires argentina" />
     </div>
     <article className={styles.article}>
         <h2>¿Por qué elegir Argentina?</h2>
