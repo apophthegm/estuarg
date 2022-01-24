@@ -17,6 +17,10 @@ const ButtonWhite = ({ msg, path }) => {
             margin: auto auto 0;
             color: #000000;
             border-radius: 15px;
+            transition: background-color 300ms ease;
+        }
+        a:hover{
+          background-color: #cfcfcf;
         }
         h6{
             display: inline;

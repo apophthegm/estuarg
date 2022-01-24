@@ -17,7 +17,11 @@ const ButtonBlue = ({ msg, path }) => {
           background-color: var(--color-secondary);
           margin: auto auto 0;
           color: #ffffff;
-          border-radius: 15px;
+          border-radius: 15px;transition: background-color 300ms ease;
+        }
+        a:hover{
+          background-color: var(--color-secondary-shadow);
+        }
         }
         h4{
           font-weight: 600;

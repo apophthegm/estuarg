@@ -1,55 +1,55 @@
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraLight.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraLight.woff2) format("woff2");
   font-weight: 200;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Regular.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Medium.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Medium.woff2) format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-SemiBold.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Bold.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Bold.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraBold.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraBold.woff2) format("woff2");
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Black.woff);
+  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Black.woff2) format('woff2');
   font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Yellowtail";
-  src: local("Yellowtail"), url(./fonts/Yellowtail-Regular.woff);
+  src: local("Yellowtail"), url(./fonts/Yellowtail-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
@@ -74,6 +74,7 @@
   --color-secondary: #63adf2;
   --color-tertiary: #fefae0;
   --grey-footer: #898989;
+  --color-secondary-shadow: #3982c5;
 
   /* PADDINGS AND MARGINS */
   --margin-one: 25px;
