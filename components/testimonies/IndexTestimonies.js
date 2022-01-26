@@ -12,6 +12,7 @@ const IndexTestimonies = () => {
   const [visible, setVisible] = useState(false);
 
   const effect = (num) => {
+    console.log(num);
     setVisible(false);
     setTimeout(() => {
       setActive(num);
@@ -20,19 +21,19 @@ const IndexTestimonies = () => {
   };
 
   const next = () => {
-    if (active >= 0 && active < localTestimonies.length - 1) {
-      effect(active + 1);
+    if (active >= 0 && active < (localTestimonies.length - 1)) {
+      effect(parseInt(active) + 1);
     }
   };
 
   const prev = () => {
     if (active > 0 && active <= localTestimonies.length - 1) {
-      effect(active - 1);
+      effect(parseInt(active) - 1);
     }
   };
 
   const setTest = (event) => {
-    const num = event.target.getAttribute("data-testimony");
+    const num = parseInt(event.target.getAttribute("data-testimony"));
     effect(num);
   };
 
