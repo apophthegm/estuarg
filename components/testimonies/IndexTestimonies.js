@@ -12,7 +12,6 @@ const IndexTestimonies = () => {
   const [visible, setVisible] = useState(false);
 
   const effect = (num) => {
-    console.log(num);
     setVisible(false);
     setTimeout(() => {
       setActive(num);

@@ -289,6 +289,14 @@
   right: var(--h1);
 }
 
+.img{
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.show{
+  opacity: 1;
+}
+
 .article{
   display: flex;
   flex-direction: column;

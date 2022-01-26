@@ -1,12 +1,41 @@
 import Image from "next/image";
 import styles from "styles/home.module.css";
-import resource from "public/assets/obelisco-buenos-aires-argentina.jpg";
 import ButtonBlue from "components/ButtonBlue";
+import { useEffect, useState } from "react";
+
+const images = ["/obelisco-buenos-aires-argentina.jpg", "/mate-argentino.jpg", "/ciudad-de-buenos-aires.jpg"];
 
 const Why = () => {
+  const [index, setIndex] = useState(0);
+  const [resource, setResource] = useState(images[index]);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (index >= 0 && index < images.length - 1) {
+      const interval = setInterval(() => {
+        setVisible(false);
+        setTimeout(() => {
+          setIndex(prev => prev + 1);
+          setResource(images[index + 1]);
+        }, 300);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+    if (index === images.length - 1) {
+      const interval = setInterval(() => {
+        setVisible(false);
+        setTimeout(() => {
+          setIndex(0);
+          setResource(images[0]);
+        }, 300);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  });
+
   return <section className={styles.why}>
     <div className={styles.divImg}>
-        <Image src={resource} placeholder="blur" className={styles.img} alt="obelisco buenos aires argentina" />
+        <Image src={require(`../../../public/assets/images${resource}`)} className={visible ? `${styles.img} ${styles.show}` : styles.img} alt="obelisco buenos aires argentina" onLoad={() => setVisible(true)} />
     </div>
     <article className={styles.article}>
         <h2>¿Por qué elegir Argentina?</h2>
