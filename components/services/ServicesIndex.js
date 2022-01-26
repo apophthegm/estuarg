@@ -7,7 +7,7 @@ export const iconsInfo = [
     height: "50",
     color: "#ffffff",
     desc: "Te ayudamos a legalizar todos los papeles que necesitas al momento de realizar tu viaje.",
-    title: "Legalización de papeles"
+    title: "Legalización de documentos"
   },
   {
     name: "bx:bxs-building-house",
