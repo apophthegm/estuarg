@@ -69,7 +69,7 @@
   --black: #181616;
   --black80: rgba(24, 22, 22, 0.8);
   --black40: rgba(24, 22, 22, 0.4);
-  --black10: rgba(24, 22, 22, 0.1);
+  --black20: rgba(24, 22, 22, 0.2);
   --color-primary: #faedcd;
   --color-secondary: #63adf2;
   --color-tertiary: #fefae0;
@@ -136,7 +136,7 @@ p, h6{
 }
 
 @media screen and (max-width: 780px) {
-  p {
+  p, h6 {
     font-size: calc(var(--h6-p) - 3px);
   }
   h2{
