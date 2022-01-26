@@ -1,5 +1,6 @@
+import { Icon } from "@iconify/react";
 import testimonies from "db/testimonies";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TestimonyCard from "./TestimonyCard";
 
 const localTestimonies = testimonies.slice(0, 5);
@@ -8,18 +9,50 @@ const IndexTestimonies = () => {
   const [testimony, setTestimony] = useState(localTestimonies[0]);
   const [active, setActive] = useState(0);
 
-  const setTest = (event) => {
-    setActive(event.target.getAttribute("data-testimony"));
-    setTestimony(localTestimonies[event.target.getAttribute("data-testimony")]);
+  const [visible, setVisible] = useState(false);
+
+  const effect = (num) => {
+    setVisible(false);
+    setTimeout(() => {
+      setActive(num);
+      setTestimony(localTestimonies[num]);
+    }, 300);
   };
+
+  const next = () => {
+    if (active >= 0 && active < localTestimonies.length - 1) {
+      effect(active + 1);
+    }
+  };
+
+  const prev = () => {
+    if (active > 0 && active <= localTestimonies.length - 1) {
+      effect(active - 1);
+    }
+  };
+
+  const setTest = (event) => {
+    const num = event.target.getAttribute("data-testimony");
+    effect(num);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible("visible");
+    }, 300);
+  }, [visible]);
 
   return <div className="container">
     <h2>Nuestros clientes lo confirman</h2>
     <div className="cards">
-      <TestimonyCard name={testimony.name} from={testimony.from} picture={testimony.picture} testimony={testimony.testimony} />
+        <div className={visible ? `card ${visible}` : "card"}>
+          <TestimonyCard name={testimony.name} from={testimony.from} picture={testimony.picture} testimony={testimony.testimony}/>
+        </div>
 
       <div className="btns">
+        <Icon icon="bi:arrow-left" color="#181616" height={32} style={{ cursor: "pointer" }} onClick={prev} />
         {Object.keys(localTestimonies).map(index => <span key={index} data-testimony={index} onClick={setTest} ></span>)}
+        <Icon icon="bi:arrow-left" color="#181616" height={32} rotate={2} style={{ cursor: "pointer" }} onClick={next} />
       </div>
     </div>
 
@@ -49,13 +82,21 @@ const IndexTestimonies = () => {
         min-height: 320px;
         margin: 0 auto;
       }
+      .card{
+        opacity: 0;
+        transition: opacity 300ms ease;
+      }
+      .${visible}{
+        opacity: 1;
+      }
       .btns{
-        cursor: pointer;
         gap: 15px;
+        -webkit-tap-highlight-color: transparent;
       }
       span{
         width: 15px;
         height: 15px;
+        cursor: pointer;
       }
       span:before{
         content: "";

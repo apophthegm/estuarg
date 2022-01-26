@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 
-const TestimonyCard = ({ name, picture, from, testimony }) => {
+const TestimonyCard = ({ name, picture, from, testimony, visible = false }) => {
   return (
-    <div>
+    <div className={ visible }>
       <span>
-        <Image src={require(`../../public/profiles${picture}`)} />
+        <Image src={require(`../../public/profiles${picture}`)} placeholder="blur" />
       </span>
       <blockquote>
         <Icon style={{ position: "absolute", zIndex: "-1", left: 0 }} icon="entypo:quote" color="var(--color-primary)" height="127" rotate={2} />
