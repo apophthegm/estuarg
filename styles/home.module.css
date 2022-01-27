@@ -174,11 +174,7 @@
     }
     .navbarCtn{
       position: fixed;
-      min-width: 250px;
-      max-width: max(400px, 50vw);
-      height: calc(100% - 68px);
-      top: 68px;
-      right: 0;
+      inset: 68px 0 0 40vw;
       transform: translateX(100%);
       transition: transform 300ms linear;
       background-color: var(--black80);
