@@ -11,7 +11,7 @@ const icons = [
     iconHeight: 35,
     title: "WhatsApp",
     desc: "Opción 1",
-    color: "#ffff",
+    color: "#ffff"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const icons = [
     iconHeight: 35,
     title: "WhatsApp",
     desc: "Opción 2",
-    color: "#ffff",
+    color: "#ffff"
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const icons = [
     iconHeight: 35,
     title: "WhatsApp",
     desc: "Opción 3",
-    color: "#ffff",
+    color: "#ffff"
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const icons = [
     iconHeight: 35,
     title: "Email",
     desc: "estuargasesorias@gmail.com",
-    color: "#ffff",
+    color: "#ffff"
   },
   {
     id: 5,
@@ -47,8 +47,8 @@ const icons = [
     iconHeight: 35,
     title: "Ubicación",
     desc: "Uriburu 1661 piso 2, Recoleta",
-    color: "#ffff",
-  },
+    color: "#ffff"
+  }
 ];
 
 const IndexFooter = () => {
