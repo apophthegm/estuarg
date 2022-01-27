@@ -179,6 +179,7 @@
       transition: transform 300ms linear;
       background-color: var(--black80);
       z-index: 1;
+      overflow: hidden;
     }
     .reveal{
       transform: translateX(0);
