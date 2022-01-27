@@ -131,7 +131,7 @@ const Navbar = () => {
                 display: flex;
                 position: fixed;
                 z-index: 2;
-                right: var(--margin-one);
+                right: var(--padding-one);
                 top: calc(var(--margin-one) - 5px);
                 padding: var(--padding-one);
               }
