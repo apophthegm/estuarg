@@ -166,6 +166,9 @@ const IndexFooter = () => {
                   font-size: var(--h1);
                   line-height: var(--h1);
                 }
+                span{
+                  padding-left: var(--padding-one);
+                }
             }
             }
         `}</style>
