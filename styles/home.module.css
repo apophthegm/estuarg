@@ -17,25 +17,20 @@
 }
 
 .bgImg,
-.header,
 .content {
   width: 100%;
 }
 
-.header,
-.navbar,
 .content,
 .contentList > li {
   display: flex;
   align-items: center;
 }
 
-.header,
 .content {
   color: var(--color-primary);
 }
 
-.navbar,
 .logo {
   margin: 0;
 }
@@ -44,12 +39,10 @@
 .quote1 {
   font-weight: 900;
 }
-.navbar,
 .contentList {
   list-style: none;
 }
 
-.navbar,
 .contentBig > h5 {
   font-weight: 500;
 }
@@ -65,13 +58,6 @@
   z-index: -1;
 }
 
-.header {
-  max-width: 100vw;
-  background-color: var(--black80);
-  justify-content: space-around;
-  padding: calc(1.5 * var(--padding-one)) 0;
-}
-
 .navbar {
   gap: var(--margin-one);
   font-size: var(--h4);
@@ -81,10 +67,6 @@
   text-align: center;
   cursor: pointer;
   width: 100%;
-}
-
-.rotateContainer{
-  display: none;
 }
 
 /* -------------------------------------HEADER CONTENT------------------------- */
@@ -148,56 +130,6 @@
     gap: calc(2 * var(--margin-one));
     padding-top: calc(69px + var(--margin-one));
     pointer-events: none;
-  }
-  @media screen and (max-width: 650px){
-    .header{
-      justify-content: space-between;
-      padding-left: var(--margin-one);
-      padding-right: var(--margin-one);
-    }
-    .rotateContainer{
-      display: inherit;
-    }
-    .rotate, .menu{
-      transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-      d 300ms ease-in-out, opacity 300ms ease-out;
-    }
-    .menu{
-      transform: rotate(45deg);
-    }
-    .menu > g > path:nth-child(1) {
-      d: path("M16 3 L16 29");
-    }
-    
-    .menu > g > path:nth-child(2) {
-      d: path("M3 16 L29 16");
-    }
-    .navbarCtn{
-      position: fixed;
-      inset: 68px 0 0 40vw;
-      transform: translateX(100%);
-      transition: transform 300ms linear;
-      background-color: var(--black80);
-      z-index: 1;
-      overflow: hidden;
-    }
-    .reveal{
-      transform: translateX(0);
-    }
-
-    .navbar{
-      flex-direction: column;
-      height: 100%;
-      width: 100%;
-      padding-top: calc(3 * var(--margin-one));
-      gap: 0;
-    }
-    .navbar>li{
-      padding: var(--padding-one) 0;
-    }
-    .navbar>li:hover{
-      background-color: var(--color-secondary);
-    }
   }
 }
 
