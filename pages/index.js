@@ -6,13 +6,13 @@ import IndexTestimonies from "components/testimonies/IndexTestimonies";
 
 export const Home = () => {
   return (
-    <>
+    <div id="inicio">
       <Header />
       <About />
       <ServicesIndex />
       <IndexTestimonies />
       <IndexFooter />
-    </>
+    </div>
   );
 };
 

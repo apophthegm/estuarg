@@ -7,28 +7,28 @@ const Footer = () => {
         <ul>
           <h6>Enlaces rápidos</h6>
           <li>
-            <Link href="/">
+            <Link href="#inicio">
               <a>
                 <p>Inicio</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/nosotros">
+            <Link href="#nosotros">
               <a>
                 <p>Nosotros</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/testimonios">
+            <Link href="#testimonios">
               <a>
                 <p>Testimonios</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/contacto">
+            <Link href="#contacto">
               <a>
                 <p>Contacto</p>
               </a>
