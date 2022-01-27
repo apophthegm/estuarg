@@ -149,10 +149,10 @@ const IndexFooter = () => {
             }
 
             @media screen and (max-width: 600px){
-                h1{
+              h1{
                 font-size: calc(var(--font-semibig) - 15px);
-                }
-                .socials{
+              }
+              .socials{
                 row-gap: calc(var(--padding-one) + 10px);
                 grid-template-areas:
                 "a"
@@ -160,6 +160,12 @@ const IndexFooter = () => {
                 "e"
                 "b"
                 "d";
+              }
+              @media screen and (max-width: 420px){
+                h1{
+                  font-size: var(--h1);
+                  line-height: var(--h1);
+                }
             }
             }
         `}</style>
