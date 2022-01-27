@@ -42,7 +42,7 @@ const icons = [
   },
   {
     id: 5,
-    link: "mailto:estuargasesorias@gmail.com",
+    link: "https://goo.gl/maps/hBYogRumQ6HfQDYHA",
     iconName: "akar-icons:location",
     iconHeight: 35,
     title: "Ubicación",
@@ -176,4 +176,3 @@ const IndexFooter = () => {
 };
 
 export default IndexFooter;
-// ©
