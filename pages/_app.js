@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
   <>
     <Head>
-      <meta name="theme-color" content="var(--black)" />
+      <meta name="theme-color" content="#181616" />
       <meta name="msapplication-TileColor" content="#181616)" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
