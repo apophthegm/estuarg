@@ -110,8 +110,10 @@ const Footer = () => {
         }
         @media screen and (max-width: 420px) {
             h6, p {
-              font-size: var(--h1);
-              line-height: var(--h1);
+              font-size: 14px;
+            }
+            span{
+              font-size: 12px;
             }
           }
       `}</style>
