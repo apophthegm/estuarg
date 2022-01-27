@@ -20,6 +20,7 @@ const Navbar = () => {
       body.style.top = `-${scroll}px`;
       body.style.height = `calc(100% + ${scroll}px)`;
       body.style.position = "fixed";
+      body.style.overflow = "hidden";
     }
   };
 
