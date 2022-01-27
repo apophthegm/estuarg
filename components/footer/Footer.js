@@ -108,6 +108,12 @@ const Footer = () => {
           font-size: 14px;
           color: var(--grey-footer);
         }
+        @media screen and (max-width: 420px) {
+            h6, p {
+              font-size: var(--h1);
+              line-height: var(--h1);
+            }
+          }
       `}</style>
     </footer>
   );
