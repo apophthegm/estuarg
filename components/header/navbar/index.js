@@ -2,38 +2,26 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  let scroll = 0;
   const [visible, setVisible] = useState(false);
 
   const handleClick = () => {
     const hamburguer = document.getElementById("menu");
     const btn = document.getElementById("menuBtn");
     const nav = document.getElementById("mobileNav");
-    const b = document.body;
 
     hamburguer.classList.toggle("menu");
     btn.classList.toggle("rotateBtn");
     nav.classList.toggle("show");
-
-    if (b.style.position === "fixed") {
-      b.style = "";
-      window.scroll(0, scroll);
-    } else {
-      scroll = window.scrollY;
-      b.style.top = `-${scroll}px`;
-      b.style.height = `calc(100% + ${scroll}px)`;
-      b.style.position = "fixed";
-    }
   };
 
   useEffect(() => {
     window.onscroll = () => {
       const btn = document.getElementById("menuBtn");
       if (window.scrollY > 600) {
-        btn.style.backgroundColor = "var(--black80)";
+        btn.classList.add("visible");
       }
       if (window.scrollY < 600) {
-        btn.style.backgroundColor = "transparent";
+        btn.classList.remove("visible");
       }
     };
   }, [visible]);
@@ -72,28 +60,28 @@ const Navbar = () => {
         <ul>
           <li>
             <Link href="#inicio">
-              <a>
+              <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Inicio</h4>
               </a>
             </Link>
           </li>
           <li>
             <Link href="#nosotros">
-              <a>
+              <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Nosotros</h4>
               </a>
             </Link>
           </li>
           <li>
             <Link href="#testimonios">
-              <a>
+              <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Testimonios</h4>
               </a>
             </Link>
           </li>
           <li>
             <Link href="#contacto">
-              <a>
+              <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Contacto</h4>
               </a>
             </Link>
@@ -133,6 +121,9 @@ const Navbar = () => {
             justify-content: start;
             padding-left: var(--margin-one);
           }
+          .visible{
+            background-color: var(--black80);
+          }
           button {
             display: flex;
             position: fixed;
@@ -166,6 +157,7 @@ const Navbar = () => {
             text-align: end;
           }
           .rotateBtn {
+            background-color: transparent;
             transform: rotate(45deg);
           }
           button,
