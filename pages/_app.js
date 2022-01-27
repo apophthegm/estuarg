@@ -1,5 +1,6 @@
 import "styles/globals.css";
 import Head from "next/head";
+import Footer from "components/footer/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     </Head>
     <Component {...pageProps} />
+    <Footer />
   </>
   );
 }
