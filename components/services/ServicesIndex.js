@@ -1,5 +1,4 @@
 import Icons from "./Icons";
-import ButtonWhite from "components/ButtonWhite";
 
 export const iconsInfo = [
   {
