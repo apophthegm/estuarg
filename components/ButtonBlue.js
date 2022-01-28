@@ -3,7 +3,7 @@ import Link from "next/link";
 const ButtonBlue = ({ msg, path }) => {
   return (
     <>
-      <Link href={path} as={"/"}>
+      <Link href={path}>
         <a>
           <h4>{msg}</h4>
         </a>

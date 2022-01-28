@@ -59,28 +59,28 @@ const Navbar = () => {
       <nav id="mobileNav">
         <ul>
           <li>
-            <Link href="#inicio" as={"/"}>
+            <Link href="#inicio">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Inicio</h4>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#nosotros" as={"/"}>
+            <Link href="#nosotros">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Nosotros</h4>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#testimonios" as={"/"}>
+            <Link href="#testimonios">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Testimonios</h4>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#contacto" as={"/"}>
+            <Link href="#contacto">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Contacto</h4>
               </a>

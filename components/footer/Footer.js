@@ -7,28 +7,28 @@ const Footer = () => {
         <ul>
           <h6>Enlaces rápidos</h6>
           <li>
-            <Link href="#inicio" as={"/"}>
+            <Link href="#inicio">
               <a>
                 <p>Inicio</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#nosotros" as={"/"}>
+            <Link href="#nosotros">
               <a>
                 <p>Nosotros</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#testimonios" as={"/"}>
+            <Link href="#testimonios">
               <a>
                 <p>Testimonios</p>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#contacto" as={"/"}>
+            <Link href="#contacto">
               <a>
                 <p>Contacto</p>
               </a>
