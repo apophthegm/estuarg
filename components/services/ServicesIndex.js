@@ -35,7 +35,6 @@ const ServicesIndex = () => {
           return <Icons key={index} iconName={name} iconHeight={height} iconColor={color} desc={desc} title={title} />;
         })}
       </div>
-      <ButtonWhite msg={"Ver todos"} path={"/nosotros"} />
       <style jsx>{`
         section{
           background-color: var(--color-secondary);
