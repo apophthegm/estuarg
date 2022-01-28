@@ -34,6 +34,7 @@ const ServicesIndex = () => {
           return <Icons key={index} iconName={name} iconHeight={height} iconColor={color} desc={desc} title={title} />;
         })}
       </div>
+      <span>Entre muchos otros más...</span>
       <style jsx>{`
         section{
           background-color: var(--color-secondary);
@@ -50,6 +51,11 @@ const ServicesIndex = () => {
           margin: 0 auto;
           justify-content: space-around;
           margin-bottom: var(--margin-two);
+        }
+        span{
+          font-family: 'Yellowtail', sans-serif;
+          font-size: var(--h4);
+          color: var(--black);
         }
 
         @media screen and (max-width: 820px) {
