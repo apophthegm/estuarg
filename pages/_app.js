@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
       <link rel="apple-touch-icon" sizes="144x144" href="https://estuarg.com/logos/logo144.png" importance="low"></link>
       <link rel="apple-touch-icon" sizes="152x152" href="https://estuarg.com/logos/logo152.png" importance="low"></link>
       <link rel="apple-touch-icon" sizes="180x180" href="https://estuarg.com/logos/logo180.png" importance="low"></link>
-      <link rel="canonical" href="https://estuarg.com/" />
+      <link rel="canonical" href="https://estuarg.com" />
       <meta name="keywords" content="Asesoaria, viajar, argentina, estuarg, educacion en argentina, viajar a argentina, estudiar en argentina, educarse en argentina, universidades en argentina, estudiar en universidades argentinas, asesorias para viajar a argentina, asesorias para estudiar a argentina, asesorias para viajar y estudiar a argentina, asesorias para viajar en argentina, asesorias para estudiar en argentina, asesorias para viajar y estudiar en argentina"></meta>
       <meta httpEquiv="expires" content="86400" />
     </Head>
