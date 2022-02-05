@@ -16,10 +16,10 @@ function MyApp({ Component, pageProps }) {
       <link rel="shortcut icon" href="https://estuarg.com/favicon.ico" type="image/x-icon" />
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:site" content="@estuarg"></meta>
-      <meta name="twitter:image" content="https://estuarg.com/logos/logo180.png"></meta>
+      <meta name="twitter:image" content="https://estuarg.com/logos/logo250.png"></meta>
       <meta property="og:url" content="https://estuarg.com/"></meta>
       <meta property="og:title" content="EstuArg | Asesoría para estudiar en Argentina"></meta>
-      <meta property="og:image" content="https://estuarg.com/logos/logo180.png"></meta>
+      <meta property="og:image" content="https://estuarg.com/logos/logo250.png"></meta>
       <meta property="og:description" content="Asesoría para viajar y estudiar en Argentina. Somos una empresa liderada por jóvenes que brindan ayuda a todas las personas que deseen estudiar en Argentina."></meta>
       <meta property="og:type" content="website"></meta>
       <meta name="apple-mobile-web-app-title" content="EstuArg"></meta>
