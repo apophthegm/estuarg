@@ -10,7 +10,7 @@ const icons = [
     iconName: "cib:whatsapp",
     iconHeight: 35,
     title: "WhatsApp",
-    desc: "Opción 2",
+    desc: "Opción 1",
     color: "#ffff"
   },
   {
@@ -19,7 +19,7 @@ const icons = [
     iconName: "cib:whatsapp",
     iconHeight: 35,
     title: "WhatsApp",
-    desc: "Opción 3",
+    desc: "Opción 2",
     color: "#ffff"
   },
   {
@@ -28,7 +28,7 @@ const icons = [
     iconName: "cib:whatsapp",
     iconHeight: 35,
     title: "WhatsApp",
-    desc: "Opción 1",
+    desc: "Opción 3",
     color: "#ffff"
   },
   {
