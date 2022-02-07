@@ -1,10 +1,21 @@
 import "styles/globals.css";
 import Head from "next/head";
 import Footer from "components/footer/Footer";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
   <>
+    <Script strategy="afterInteractive" src={"https://www.googletagmanager.com/gtag/js?id=G-9QMCR9WS0E"} />
+    <Script strategy="afterInteractive">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9QMCR9WS0E');
+      `}
+    </Script>
     <Head>
       <meta name="theme-color" content="#181616" />
       <meta name="msapplication-TileColor" content="#181616)" />
