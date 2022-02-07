@@ -6,15 +6,6 @@ import { Icon } from "@iconify/react";
 const icons = [
   {
     id: 1,
-    link: "https://wa.me/5491127678532",
-    iconName: "cib:whatsapp",
-    iconHeight: 35,
-    title: "WhatsApp",
-    desc: "Opción 1",
-    color: "#ffff"
-  },
-  {
-    id: 2,
     link: "https://wa.me/573122779915",
     iconName: "cib:whatsapp",
     iconHeight: 35,
@@ -23,8 +14,8 @@ const icons = [
     color: "#ffff"
   },
   {
-    id: 3,
-    link: "https://wa.me/57005731373",
+    id: 2,
+    link: "https://wa.me/573005731373",
     iconName: "cib:whatsapp",
     iconHeight: 35,
     title: "WhatsApp",
@@ -32,12 +23,21 @@ const icons = [
     color: "#ffff"
   },
   {
+    id: 3,
+    link: "https://wa.me/5491127678532",
+    iconName: "cib:whatsapp",
+    iconHeight: 35,
+    title: "WhatsApp",
+    desc: "Opción 1",
+    color: "#ffff"
+  },
+  {
     id: 4,
-    link: "mailto:estuargasesorias@gmail.com",
+    link: "mailto:info@estuarg.com",
     iconName: "cib:mail-ru",
     iconHeight: 35,
     title: "Email",
-    desc: "estuargasesorias@gmail.com",
+    desc: "info@estuarg.com",
     color: "#ffff"
   },
   {
