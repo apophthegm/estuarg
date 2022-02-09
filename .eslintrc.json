@@ -28,6 +28,7 @@
         "exports": "never",
         "functions": "never"
       }
-    ]
+    ],
+    "react/jsx-indent": ["error", 2]
   }
 }

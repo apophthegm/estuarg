@@ -16,32 +16,32 @@ const TestimonyCard = ({ name, picture, from, testimony, visible = false }) => {
         <h6>{name}</h6>
         <p>{from}</p>
       </section>
-    <style jsx> {`
-      div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        margin-bottom: var(--margin-one);
-      }
-      span{
-        display: flex;
-        border-radius: 50%;
-        overflow: hidden;
-        width: 120px;
-        height: 120px;
-        margin-bottom: 20px;
-      }
-      blockquote{
-        display: grid;
-        place-items: center;
-        position: relative;
-        margin: 0;
-        margin-bottom: var(--margin-one);
-      }
+      <style jsx> {`
+        div{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          margin-bottom: var(--margin-one);
+        }
+        span{
+          display: flex;
+          border-radius: 50%;
+          overflow: hidden;
+          width: 120px;
+          height: 120px;
+          margin-bottom: 20px;
+        }
+        blockquote{
+          display: grid;
+          place-items: center;
+          position: relative;
+          margin: 0;
+          margin-bottom: var(--margin-one);
+        }
       `} </style>
-  </div>
+    </div>
   );
 };
 

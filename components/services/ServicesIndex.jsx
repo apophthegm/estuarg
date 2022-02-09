@@ -26,7 +26,7 @@ export const iconsInfo = [
 
 const ServicesIndex = () => {
   return (
-  <section>
+    <section>
       <h2>Nuestros servicios</h2>
       <div>
         {iconsInfo.map((icon, index) => {
@@ -66,7 +66,7 @@ const ServicesIndex = () => {
           }
         }
         `}</style>
-  </section>);
+    </section>);
 };
 
 export default ServicesIndex;

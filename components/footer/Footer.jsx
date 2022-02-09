@@ -109,13 +109,13 @@ const Footer = () => {
           color: var(--grey-footer);
         }
         @media screen and (max-width: 420px) {
-            h6, p {
-              font-size: 14px;
-            }
-            span{
-              font-size: 12px;
-            }
+          h6, p {
+            font-size: 14px;
           }
+          span{
+            font-size: 12px;
+          }
+        }
       `}</style>
     </footer>
   );
