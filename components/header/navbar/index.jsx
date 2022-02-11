@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <Link href="#inicio">
+      <Link href="/">
         <a className="logo">
           <h1>EstuArg</h1>
         </a>
@@ -59,28 +59,28 @@ const Navbar = () => {
       <nav id="mobileNav">
         <ul>
           <li>
-            <Link href="#inicio">
+            <Link href="/">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Inicio</h4>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#nosotros">
+            <Link href="/nosotros">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Nosotros</h4>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#testimonios">
+            <Link href="/preguntas">
               <a onClick={() => document.getElementById("menuBtn").click()}>
-                <h4>Testimonios</h4>
+                <h4>Preguntas</h4>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="#contacto">
+            <Link href="/contacto">
               <a onClick={() => document.getElementById("menuBtn").click()}>
                 <h4>Contacto</h4>
               </a>
@@ -127,7 +127,7 @@ const Navbar = () => {
           button {
             display: flex;
             position: fixed;
-            z-index: 2;
+            z-index: 3;
             right: var(--padding-one);
             top: calc(var(--margin-one) - 5px);
             padding: var(--padding-one);
@@ -140,7 +140,7 @@ const Navbar = () => {
           }
           nav {
             position: fixed;
-            z-index: 1;
+            z-index: 2;
             inset: 0 0 0 40%;
             background-color: var(--black80);
             overflow: hidden;
