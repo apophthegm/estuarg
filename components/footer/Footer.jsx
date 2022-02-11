@@ -59,12 +59,12 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="mailto:estuargasesorias@gmail.com"
+              href="mailto:info@estuarg.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <p>Email:</p>
-              <p>estuargasesorias@gmail.com</p>
+              <p>info@estuarg.com</p>
             </a>
           </li>
         </ul>
