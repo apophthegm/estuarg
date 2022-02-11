@@ -52,7 +52,7 @@ const Index = () => {
       </div>
     </section>
     <div className="estuarg">
-      <a className="imgEstuarg" href="https://instagram.com/estuarglatam">
+      <a className="imgEstuarg" href="https://instagram.com/estuarglatam" target="_blank" rel="noopener noreferrer">
         <Image src={estuarg} placeholder="blur" alt="estuarg logo" />
       </a>
     </div>
