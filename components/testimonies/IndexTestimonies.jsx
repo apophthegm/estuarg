@@ -96,7 +96,7 @@ const IndexTestimonies = () => {
             text-align: center;
           }
           h2 {
-            margin-bottom: var(--margin-two);
+            margin-bottom: var(--margin-one);
           }
           .cards {
             flex-direction: column;
