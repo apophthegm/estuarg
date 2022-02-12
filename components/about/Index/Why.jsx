@@ -45,7 +45,7 @@ const Why = () => {
       <p>Además de todo esto, hay universidades como lo son la UBA o la UNLP que cuentan con un <b>muy buen prestigio internacional,</b> por lo que, si deccides ingresar a estas universidades, tu título será muy bien visto en el exterior.</p>
       <p>Sobra mencionar el hecho de poder experimentar una nueva cultura, nuevos amigos, nuevas travesías, experiencias y, sobretodo, un nuevo futuro para ti.</p>
       <p>¿Qué esperas? ¡Contáctanos y realicemos juntons tu sueño!</p>
-      <ButtonBlue msg={"CONTACTAR"} path="#contacto" />
+      <ButtonBlue msg={"CONTACTAR"} path="/contacto" />
     </article>
   </section>;
 };
