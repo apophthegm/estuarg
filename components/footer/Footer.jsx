@@ -49,12 +49,12 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="tel:+5491127678532"
+              href="https:/wa.me/573204901742"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>Teléfono:</p>
-              <p>+54 9 11 2767 8532</p>
+              <p>Teléfonos:</p>
+              <p>+57 320 490 1742</p>
             </a>
           </li>
           <li>

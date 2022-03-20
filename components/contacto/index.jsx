@@ -39,7 +39,7 @@ const Contacto = () => {
           <span>
             <Icon icon="fluent:globe-location-24-filled" color="#63adf2" height="28" />
           </span>
-          <a style={{ maxWidth: "25ch" }} href="https://goo.gl/maps/hBYogRumQ6HfQDYHA" target="_blank" rel="noopener noreferrer">Uriburú 1662 piso 2, Recoleta. Buenos Aires - Argentina.</a>
+          <a style={{ maxWidth: "25ch" }} href="https://goo.gl/maps/hBYogRumQ6HfQDYHA" target="_blank" rel="noopener noreferrer">Uriburú 1661 piso 2, Recoleta. Buenos Aires - Argentina.</a>
         </div>
       </section>
 
