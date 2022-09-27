@@ -14,7 +14,7 @@ const Index = () => {
       <div>
         <h5>¿Qué servicios ofrecen?</h5>
         <p>
-          En estuarg, no contamos con planes, pues sabemos que no todos están interesados en adquirir paquetes predefinidos, por eso, en EstuArg tú eliges qué servicios deseas y nosotros te brindamos ayuda solo en eso que deseas. Si te interesa conocer todos nuestros servicios, te recomendamos <a href="https://drive.google.com/uc?id=1-9tkaKO1LXOL6OKoQlXFoPvnrlDwkX2I&export=download&authuser=0"> <u>descargar nuestra guía</u></a> que contiene todos los servicios ofrecidos y la descripción de cada uno.
+          En estuarg, no contamos con planes, pues sabemos que no todos están interesados en adquirir paquetes predefinidos, por eso, en EstuArg tú eliges qué servicios deseas y nosotros te brindamos ayuda solo en eso que deseas. Si te interesa conocer todos nuestros servicios, te recomendamos <a href="https://drive.google.com/uc?id=1qzxzNCECEsZoshm6pCfUULotlt-lOAvB&export=download&authuser=0"> <u>descargar nuestra guía</u></a> que contiene todos los servicios ofrecidos y la descripción de cada uno.
         </p>
       </div>
       <div>
