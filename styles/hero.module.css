@@ -1,0 +1,45 @@
+.hero {
+  min-width: 100vw;
+  padding: 0 5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero_container {
+  display: grid;
+  gap: 1rem;
+  flex-grow: 999;
+  flex-basis: calc(100% / 3 * 2)
+}
+
+.hero__title {
+  font-size: 3rem;
+  line-height: 3.8rem;
+  font-weight: 700;
+}
+
+.hero__desc {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+.hero__desc_bold {
+  font-weight: 600;
+}
+
+.img_container {
+  flex-basis: min(20rem, 80vw);
+  flex-grow: 1;
+  position: relative;
+  z-index: -1;
+}
+
+.buttons__container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}

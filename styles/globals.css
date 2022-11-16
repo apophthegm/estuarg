@@ -1,109 +1,55 @@
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraLight.woff2) format("woff2");
-  font-weight: 200;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Medium.woff2) format("woff2");
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-SemiBold.woff2) format("woff2");
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Bold.woff2) format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-ExtraBold.woff2) format("woff2");
-  font-weight: 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url(./fonts/montserrat/Montserrat-Black.woff2) format('woff2');
-  font-weight: 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Yellowtail";
-  src: local("Yellowtail"), url(./fonts/Yellowtail-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-
 :root {
-  /* FONTS SIZES */
-  --font-bigger: 64px;
-  --font-semibig: 52px;
-  --h1: 32px;
-  --h2: 28px;
-  --h3: 24px;
-  --h4: 22px;
-  --h5: 20px;
-  --h6-p: 18px;
+  --black: #202020;
+  --white: #fff;
+  --primary-color: #DACBFB;
+  --secondary-color: #B1D4B5;
+  --tertiary-color: #FED6D0;
 
-  /* COLORS */
-  --black: #181616;
-  --black80: rgba(24, 22, 22, 0.8);
-  --black40: rgba(24, 22, 22, 0.4);
-  --black20: rgba(24, 22, 22, 0.2);
-  --color-primary: #faedcd;
-  --color-secondary: #63adf2;
-  --color-tertiary: #fefae0;
-  --grey-footer: #898989;
-  --color-secondary-shadow: #3982c5;
-
-  /* PADDINGS AND MARGINS */
-  --margin-one: 25px;
-  --padding-one: 10px;
-  --margin-two: 60px;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-size: 16px;
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
   box-sizing: border-box;
+  vertical-align: baseline;
+
+  -webkit-box-sizing: border-box;
 }
 
-h1 {
-  font-size: var(--h1);
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+
+  -o-object-fit: cover;
+  -o-object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -113,36 +59,76 @@ h4,
 h5,
 h6,
 p,
-ul {
-  margin: 0;
-  padding: 0;
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1rem;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-h2{
-  font-size: var(--h2);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
-h3{
-  font-size: var(--h3);
+::-moz-selection,
+::selection {
+  background-color: var(--black);
+  color: var(--blanco);
 }
 
-h4{
-  font-size: var(--h4);
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+
+  -ms-hyphens: auto;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-hyphens: auto;
 }
 
-h5{
-  font-size: var(--h5);
+body,
+.global__container {
+  min-height: 100vh;
 }
 
-p, h6{
-  font-size: var(--h6-p);
+body {
+  font-size: 100%;
+  color: var(--black);
+  line-height: 1.4rem;
+  hyphens: auto;
+  font-smooth: always;
+
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media screen and (max-width: 780px) {
-  p, h6 {
-    font-size: calc(var(--h6-p) - 3px);
-  }
-  h2{
-    font-size: calc(var(--h2) - 3px);
-  }
+.global__container {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
 }
