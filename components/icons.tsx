@@ -13,3 +13,32 @@ export const Logo = ({ width, height, ...props }: SVGProps<SVGSVGElement>): Reac
   </svg>
 
 )
+
+export const Instagram = ({ width, height, ...props }: SVGProps<SVGSVGElement>): ReactElement => (
+  <svg width={width} height={height} viewBox="0 0 512 512"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z"
+    />
+    <path
+      fill="currentColor"
+      d="M377.33 162.67a28 28 0 1 1 28-28 27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256 74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112 112 112 0 0 0-112-112Z"
+    />
+  </svg>
+)
+
+export const Location = ({ width, height, ...props }: SVGProps<SVGSVGElement>): ReactElement => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 256 256"
+    {...props}
+  >
+    <path
+      fill="currentColor"
+      d="M128.1 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8.3 8.3 0 0 0 9.2 0c3.4-2.4 83.4-59.3 83.4-134.6a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32 32 32 0 0 1 32-32Z"
+    />
+  </svg>
+)

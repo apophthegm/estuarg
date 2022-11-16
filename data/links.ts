@@ -1,7 +1,14 @@
+import { FC, SVGProps } from "react"
+import { Instagram, Location } from '@components/icons'
+
 interface INavLinks {
   id: string
   title: string
   path: string
+}
+
+interface ISocialLinks extends INavLinks {
+  icon?: FC<SVGProps<SVGSVGElement>>
 }
 
 interface IPlanLinks extends INavLinks {
@@ -58,5 +65,38 @@ export const plansLinks: IPlanLinks[] = [
     path: '/',
     description: 'Tú eliges todos los servicios que necesitas y nosotros nos adaptamos a ti.',
     price: 'A convenir'
+  }
+]
+
+export const contactLinks: INavLinks[] = [
+  {
+    id: '0',
+    title: '(+57) 320 490 1742',
+    path: 'wa.me/573204901742'
+  },
+  {
+    id: '1',
+    title: '(+54) 9 11 2767-8532',
+    path: 'wa.me/5491127678532'
+  },
+  {
+    id: '2',
+    title: 'info@estuarg.com',
+    path: 'mailto:info@estuarg.com'
+  }
+]
+
+export const socialMediaLinks: ISocialLinks[] = [
+  {
+    id: '0',
+    title: '/estuarglatam',
+    path: 'https://instagram.com/estuarglatam',
+    icon: Instagram
+  },
+  {
+    id: '1',
+    title: 'Uriburú 1661 piso 2, Recoleta. Buenos Aires - Argentina.',
+    path: 'https://goo.gl/maps/hBYogRumQ6HfQDYHA',
+    icon: Location
   }
 ]

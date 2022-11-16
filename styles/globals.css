@@ -4,7 +4,7 @@
   --primary-color: #DACBFB;
   --secondary-color: #B1D4B5;
   --tertiary-color: #FED6D0;
-  --primary-color-shadow: #BBB5CA;
+  --primary-color-shadow: #b2a9c7;
 
   --font-size-title: clamp(1.3rem, 2vw, 1.7rem);
   --font-size-subtitle: clamp(1.1rem, 1.8vw, 1.5rem);
@@ -139,4 +139,6 @@ body {
   display: flex;
   gap: clamp(1.5rem, 5vw, 3rem);
   flex-direction: column;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E5D9FF 100%);
+  padding-bottom: clamp(1.5rem, 5vw, 3rem);
 }

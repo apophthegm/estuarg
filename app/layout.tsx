@@ -1,6 +1,7 @@
 import '@styles/globals.css'
 import { ReactNode } from 'react'
 import { Inter } from '@next/font/google'
+import { Footer } from '@components/footer'
 
 interface IRootLayout {
   children: ReactNode
@@ -23,7 +24,10 @@ export default function RootLayout({ children }: IRootLayout): ReactNode {
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={interFont.className}>{children}</body>
+      <body className={interFont.className}>
+      {children}
+        <Footer />
+      </body>
     </html>
   )
 }

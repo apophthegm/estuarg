@@ -35,7 +35,6 @@
   max-width: clamp(15rem, 300px, 60vw);
   flex-grow: 1;
   position: relative;
-  z-index: -1;
 }
 
 .buttons__container {
