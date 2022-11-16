@@ -4,6 +4,14 @@
   --primary-color: #DACBFB;
   --secondary-color: #B1D4B5;
   --tertiary-color: #FED6D0;
+  --primary-color-shadow: #BBB5CA;
+
+  --font-size-title: clamp(1.3rem, 2vw, 1.7rem);
+  --font-size-subtitle: clamp(1.1rem, 1.8vw, 1.5rem);
+  --line-height-title: clamp(1.7rem, 2.4vw, 2.1rem);
+  --line-height-subtitle: clamp(1.4rem, 2.1vw, 1.9rem);
+
+  --global-padding: clamp(1rem, 4vw, 5rem);
 
   font-size: 16px;
 }
@@ -129,6 +137,6 @@ body {
 
 .global__container {
   display: flex;
-  gap: 3rem;
+  gap: clamp(1.5rem, 5vw, 3rem);
   flex-direction: column;
 }
