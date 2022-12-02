@@ -1,14 +1,12 @@
 import { ReactNode } from 'react'
 import { Header } from '@components/header'
-import { Hero } from '@components/hero'
-import { AboutSection } from '@components/home/about-section'
+import Hero from '@components/hero'
 
-export default function HomePage(): ReactNode {
+export default function HomePage (): ReactNode {
   return (
-    <div className='global__container'>
+    <div style={{padding: '0 var(--global-padding)'}}>
       <Header />
       <Hero />
-      <AboutSection />
     </div>
   )
 }

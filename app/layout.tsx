@@ -12,20 +12,20 @@ const interFont = Inter({
   display: 'swap',
   preload: true,
   subsets: ['latin-ext'],
-  weight: ['400', '600', '700']
+  weight: ['400', '500', '800']
 })
 
-export default function RootLayout({ children }: IRootLayout): ReactNode {
+export default function RootLayout ({ children }: IRootLayout): ReactNode {
   return (
     <html lang='es'>
       <head>
         <title>Estuarg</title>
         <meta name='description' content='Haz tus sueños realidad, empieza hoy a construir tu futuro con la ayuda de Estuarg, la agencia estudiantil que te ayuda a realizar tus sueños y metas. Estudia en argentina, confía en Estuarg.' />
         <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </head>
       <body className={interFont.className}>
-      {children}
+        {children}
         <Footer />
       </body>
     </html>

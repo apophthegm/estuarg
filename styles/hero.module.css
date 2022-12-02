@@ -1,45 +1,217 @@
-.hero {
-  min-width: 100vw;
-  padding: 0 var(--global-padding);
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.hero_container {
+.container {
+  width: 100%;
+  height: 80vh;
   display: grid;
+  place-content: center;
+}
+
+.content {
+  display: grid;
+  place-items: center;
   gap: 1rem;
-  flex-grow: 999;
-  max-width: clamp(40rem, 60vw, 100%);
 }
 
-.hero__title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  line-height: clamp(2.8rem, 5.8vw, 3.8rem);
-  font-weight: 700;
-}
-
-.hero__desc {
-  font-size: 1.1rem;
-  line-height: 1.9rem;
-}
-
-.hero__desc_bold {
-  font-weight: 600;
-}
-
-.img_container {
-  max-width: clamp(15rem, 300px, 60vw);
-  flex-grow: 1;
-  position: relative;
-}
-
-.buttons__container {
+.title {
   display: flex;
-  gap: 2rem;
-  margin-top: clamp(1rem, 3vw, 2rem);
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: clamp(5rem, 10vw, 7rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.gradient__container {
+  position: relative;
+  display: block;
+  user-select: none;
+}
+
+.gradient__container::before {
+  content: var(--content);
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--linear-black-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  inset: 0;
+  z-index: 0;
+}
+
+.gradient__container:nth-of-type(1)::before {
+  animation: animated-gradient-text_fade-background-1 8s infinite;
+}
+
+.gradient__container:nth-of-type(2)::before {
+  animation: animated-gradient-text_fade-background-2 8s infinite;
+}
+
+.gradient__container:nth-of-type(3)::before {
+  animation: animated-gradient-text_fade-background-3 8s infinite;
+}
+
+.gradient__content {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+.gradient__container:nth-of-type(1)>.gradient__content {
+  background-image: var(--primary-gradient);
+  animation: animated-gradient-text_fade-foreground-1 8s infinite;
+}
+
+.gradient__container:nth-of-type(2)>.gradient__content {
+  background-image: var(--secondary-gradient);
+  animation: animated-gradient-text_fade-foreground-2 8s infinite;
+}
+
+.gradient__container:nth-of-type(3)>.gradient__content {
+  background-image: var(--tertiary-gradient);
+  animation: animated-gradient-text_fade-foreground-3 8s infinite;
+}
+
+@keyframes animated-gradient-text_fade-foreground-1 {
+
+  0%,
+  16.667%,
+  to {
+    opacity: 1
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0
+  }
+}
+
+@keyframes animated-gradient-text_fade-foreground-2 {
+
+  0%,
+  to {
+    opacity: 0
+  }
+
+  33.333%,
+  50% {
+    opacity: 1
+  }
+
+  16.667%,
+  66.667% {
+    opacity: 0
+  }
+}
+
+@keyframes animated-gradient-text_fade-foreground-3 {
+
+  0%,
+  50%,
+  to {
+    opacity: 0
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-1 {
+
+  0%,
+  16.667%,
+  to {
+    opacity: 0
+  }
+
+  25%,
+  91.667% {
+    opacity: 1
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-2 {
+
+  0%,
+  to {
+    opacity: 1
+  }
+
+  33.333%,
+  50% {
+    opacity: 0
+  }
+
+  25%,
+  58.333% {
+    opacity: 1
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-3 {
+
+  0%,
+  58.333%,
+  91.667%,
+  to {
+    opacity: 1
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 0
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .description {
+    max-width: 720px;
+  }
+}
+
+/* description */
+
+.description {
+  color: var(--grey);
+  font-size: var(--font-size-l);
+  max-width: 780px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* buttons */
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.button {
+  min-width: 10rem;
+  padding: 0.5rem var(--font-size-m);
+  border-radius: var(--global-border-radius);
+  text-align: center;
+}
+
+.primary {
+  font-weight: var(--font-weight-medium);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.secondary {
+  border: 1px solid var(--black);
 }

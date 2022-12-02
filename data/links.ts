@@ -1,4 +1,4 @@
-import { FC, SVGProps } from "react"
+import { FC, SVGProps } from 'react'
 import { Instagram, Location } from '@components/icons'
 
 interface INavLinks {
@@ -25,22 +25,22 @@ export const navLinks: INavLinks[] = [
   {
     id: '1',
     title: 'Nosotros',
-    path: '/nosotros'
+    path: '/'
   },
   {
     id: '2',
     title: 'Precios',
-    path: '/precios'
+    path: '/'
   },
   {
     id: '3',
     title: 'Preguntas',
-    path: '/preguntas'
+    path: '/'
   },
   {
     id: '4',
-    title: 'Contactar',
-    path: '/contacto'
+    title: 'Contacto',
+    path: '/'
   }
 ]
 

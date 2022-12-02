@@ -7,7 +7,7 @@ import { navLinks } from 'data/links'
 export const Header: FC = (): ReactElement => {
   return (
     <header className={styles.header}>
-      <Link href={"/"} >
+      <Link href='/'>
         <Logo width={90} />
       </Link>
 
@@ -22,7 +22,7 @@ const NavLinks = (): ReactElement => {
       {
         navLinks.map(navLink => (
           <li key={navLink.id}>
-            <Link href={navLink.path} className={styles.link} >
+            <Link href={navLink.path} className={styles.link}>
               {navLink.title}
             </Link>
           </li>
