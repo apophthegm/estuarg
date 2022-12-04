@@ -1,0 +1,101 @@
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--margin-separator);
+}
+
+.title {
+  font-weight: 600;
+  text-align: center;
+  color: var(--grey);
+  max-width: 50rem;
+}
+
+.logos_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logos__container--web,
+.logos__container--mobile {
+  user-select: none;
+  pointer-events: none;
+}
+
+.logos__container--web {
+  display: flex;
+  gap: clamp(1.5rem, 2vw, 2rem);
+  flex-wrap: wrap;
+}
+
+.logos__container--web:last-of-type {
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+.logos__container--mobile {
+  display: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.logos__container--mobile::before,
+.logos__container--mobile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3rem;
+  background: linear-gradient(to right, var(--white), transparent);
+  z-index: 1;
+}
+
+.logos__container--mobile::after {
+  left: unset;
+  right: 0;
+  background: linear-gradient(to left, var(--white), transparent);
+}
+
+.logo {
+  object-fit: contain;
+  display: inline;
+  width: fit-content;
+  z-index: 0;
+}
+
+.logos_mobile {
+  display: flex;
+  overflow: hidden;
+}
+
+.logos_mobile>div {
+  flex: none;
+  animation: bannerAnimation 30s linear infinite;
+}
+
+@media screen and (max-width: 800px) {
+
+  .logos__container--web {
+    display: none;
+  }
+
+  .logos__container--mobile {
+    display: block;
+  }
+}
+
+@keyframes bannerAnimation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

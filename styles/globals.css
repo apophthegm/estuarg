@@ -1,6 +1,6 @@
 :root {
-  --black: #202020;
-  --linear-black-gradient: linear-gradient(180deg, #212121cc, var(--black));
+  --black: #141414;
+  --linear-black-gradient: linear-gradient(180deg, #141414cc, var(--black));
   --white: #ffffff;
   --grey: #666666;
 
@@ -24,8 +24,10 @@
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 
-  /* global padding */
+  /* globals separators */
   --global-padding: clamp(var(--font-size-s), 5vw, var(--font-size-m));
+  --margin-separator: 3rem;
+
 
   /* global border radius */
   --global-border-radius: .3rem;
