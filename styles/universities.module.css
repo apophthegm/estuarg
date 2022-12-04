@@ -2,7 +2,6 @@
   max-width: 75rem;
   margin: 0 auto;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
   align-items: center;
   margin-top: var(--margin-separator);
@@ -12,7 +11,6 @@
   font-weight: 600;
   text-align: center;
   color: var(--grey);
-  max-width: 50rem;
 }
 
 .logos_container {
@@ -26,6 +24,7 @@
 .logos__container--mobile {
   user-select: none;
   pointer-events: none;
+  margin-top: 2rem;
 }
 
 .logos__container--web {

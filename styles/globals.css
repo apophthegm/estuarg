@@ -6,11 +6,11 @@
 
   /* gradients */
   --primary-gradient: linear-gradient(90deg, #007CF0 0%, #00DFD8 100%);
-  --primary-gradient-shadow: linear-gradient(180deg, #01AFE4 23.55%, transparent 100%);
+  --primary-gradient-shadow: linear-gradient(0deg, #01AFE4 0%, transparent 100%);
   --secondary-gradient: linear-gradient(90deg, #7928CA 0%, #FF0080 100%);
-  --secondary-gradient-shadow: linear-gradient(180deg, #BE14A4 23.55%, transparent 100%);
+  --secondary-gradient-shadow: linear-gradient(0deg, #BE14A4 23.55%, transparent 100%);
   --tertiary-gradient: linear-gradient(90deg, #FF4D4D 0%, #F9CB28 100%);
-  --tertiary-gradient-shadow: linear-gradient(180deg, #FC8B3B 23.55%, transparent 100%);
+  --tertiary-gradient-shadow: linear-gradient(0deg, #FC8B3B 23.55%, transparent 100%);
 
   /* font sizes */
   --font-size-xl: 2.5rem;
@@ -31,6 +31,7 @@
 
   /* global border radius */
   --global-border-radius: .3rem;
+  --team-border-radius: 2rem;
 
   /* global box shadow */
   --global-box-shadow: 0px 0px 40px;
