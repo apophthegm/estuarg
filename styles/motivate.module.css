@@ -67,7 +67,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 2rem;
+  width: 5rem;
   background: linear-gradient(to right, var(--white), transparent);
   z-index: 1;
 }
@@ -114,6 +114,14 @@
   box-shadow: 0 0 1rem var(--grey-shadow);
   scroll-snap-align: center;
   margin: 1rem;
+}
+
+.testimony_card:first-of-type {
+  margin-left: 0.5rem;
+}
+
+.testimony_card:last-of-type {
+  margin-right: 0.5rem;
 }
 
 .testimony_card>p {
