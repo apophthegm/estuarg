@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: clamp(15rem, 35vw, 20rem);
+  width: clamp(17rem, 50vw, 20rem);
   padding: 0.5rem;
   border-radius: var(--team-border-radius);
   box-shadow: 0 0 1rem var(--grey-shadow);
