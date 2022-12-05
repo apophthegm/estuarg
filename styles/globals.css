@@ -3,6 +3,7 @@
   --linear-black-gradient: linear-gradient(180deg, #141414cc, var(--black));
   --white: #ffffff;
   --grey: #666666;
+  --grey-shadow: #666666cc;
 
   /* gradients */
   --primary-gradient: linear-gradient(90deg, #007CF0 0%, #00DFD8 100%);
@@ -31,7 +32,7 @@
 
   /* global border radius */
   --global-border-radius: .3rem;
-  --team-border-radius: 2rem;
+  --team-border-radius: 1rem;
 
   /* global box shadow */
   --global-box-shadow: 0px 0px 40px;
