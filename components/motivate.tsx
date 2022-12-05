@@ -1,17 +1,17 @@
-import { ReactElement } from "react";
-import Image from "next/image";
-import clients from '@public/clients.png';
-import styles from "@styles/motivate.module.css";
-import { Separator } from "@components/separator";
-import { Title } from "./title";
+import { ReactElement } from 'react'
+import Image from 'next/image'
+import clients from '@public/clients.png'
+import styles from '@styles/motivate.module.css'
+import { Separator } from '@components/separator'
+import { Title } from './title'
 
 export const Motivate = (): ReactElement => {
   return (
     <section className={styles.container}>
-      <Separator message="MOTÍVATE" cssVariable="secondary-gradient" number="2" />
+      <Separator message='MOTÍVATE' cssVariable='secondary-gradient' number='2' />
       <div className={styles.flex_container}>
         <div className={styles.text_container}>
-          <Title title="¿por qué estudiar en el extranjero?" />
+          <Title title='¿por qué estudiar en el extranjero?' />
           <p className={styles.text}>
             El mundo está cambiando y la educación no puede quedarse atrás. El mundo necesita profesionales que sepan adaptarse a los cambios y que tengan una visión global de los problemas. Los estudiantes que estudian en el extranjero tienen una ventaja competitiva frente a los demás, ya que adquieren habilidades que les permiten ser más creativos, innovadores y emprendedores.
           </p>
@@ -23,10 +23,10 @@ export const Motivate = (): ReactElement => {
           </p>
         </div>
         <div className={styles.image_container}>
-          <Image src={clients} alt="clientes de estuarg" />
+          <Image src={clients} alt='clientes de estuarg' />
           <h3>NUESTROS CLIENTES</h3>
         </div>
       </div>
     </section>
   )
-};
+}

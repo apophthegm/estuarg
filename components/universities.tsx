@@ -10,7 +10,7 @@ const universitiesTwo = universities.slice(5, 9)
 export const Universities = (): ReactElement => {
   return (
     <section className={styles.container}>
-      <Title title={'ESTUDIA EN LA UNIVERSIDAD DE TUS SUEÑOS'} />
+      <Title title='ESTUDIA EN LA UNIVERSIDAD DE TUS SUEÑOS' />
 
       <div className={styles['logos__container--mobile']}>
         <div className={styles.logos_mobile}>

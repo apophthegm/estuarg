@@ -1,42 +1,42 @@
-import { ReactElement } from "react";
-import styles from "@styles/story.module.css";
-import { Title } from "@components/title";
-import { Separator } from "./separator";
-import diego from "@public/diego.png";
-import yelenka from "@public/yelenka.png";
-import leidy from "@public/leidy.png";
-import Image from "next/image";
+import { ReactElement } from 'react'
+import styles from '@styles/story.module.css'
+import { Title } from '@components/title'
+import { Separator } from './separator'
+import diego from '@public/diego.png'
+import yelenka from '@public/yelenka.png'
+import leidy from '@public/leidy.png'
+import Image from 'next/image'
 
 const Team = (): ReactElement => {
   const members = [
     {
-      name: "Leidy",
+      name: 'Leidy',
       image: leidy,
-      id: 0,
+      id: 0
     },
     {
-      name: "Diego",
+      name: 'Diego',
       image: diego,
-      id: 1,
+      id: 1
     },
     {
-      name: "Yelenka",
+      name: 'Yelenka',
       image: yelenka,
-      id: 2,
-    },
-  ];
+      id: 2
+    }
+  ]
 
   return (
     <div className={styles.team_container}>
       {members.map(({ id, image, name }) => (
-        <div className={styles.member_card_container}>
-          <span className={styles.gradient}></span>
+        <div className={styles.member_card_container} key={id}>
+          <span className={styles.gradient} />
           <div className={styles.member_card}>
-            <div key={id} className={styles.member}>
+            <div className={styles.member}>
               <Image
                 src={image}
                 alt={`${name} asesores estuarg`}
-                placeholder="blur"
+                placeholder='blur'
                 className={styles.member_image}
               />
             </div>
@@ -45,16 +45,16 @@ const Team = (): ReactElement => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
 export const Story = (): ReactElement => (
   <section className={styles.container}>
-    <Title title="CONOCE TODO ACERCA DE LA AGENCIA" />
+    <Title title='CONOCE TODO ACERCA DE LA AGENCIA' />
     <Separator
-      message="NUESTRA HISTORIA"
-      number="1"
-      cssVariable="primary-gradient"
+      message='NUESTRA HISTORIA'
+      number='1'
+      cssVariable='primary-gradient'
     />
     <p>
       Estuarg nace con la idea principal de ayudar a las personas que quieran
@@ -70,4 +70,4 @@ export const Story = (): ReactElement => (
     </p>
     <Team />
   </section>
-);
+)
