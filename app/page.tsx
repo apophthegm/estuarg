@@ -4,6 +4,9 @@ import Hero from '@components/hero'
 import { Universities } from '@components/universities'
 import { Story } from '@components/story'
 import { Motivate } from '@components/motivate'
+import { Plans } from '@components/plans'
+import { Testimonials } from '@components/testimonials'
+
 
 export default function HomePage (): ReactNode {
   return (
@@ -13,6 +16,8 @@ export default function HomePage (): ReactNode {
       <Universities />
       <Story />
       <Motivate />
+      <Testimonials />
+      <Plans />
     </div>
   )
 }

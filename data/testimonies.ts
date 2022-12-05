@@ -1,4 +1,12 @@
-const testimonies = [
+interface ITestimony {
+  id: number;
+  name: string;
+  testimony: string;
+  picture: string;
+  from: string;
+}
+
+const testimonies: ITestimony[] = [
   {
     id: 1,
     name: 'Darlivet Sanjuan Reyes',
