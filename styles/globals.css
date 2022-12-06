@@ -55,10 +55,6 @@
   vertical-align: baseline;
 }
 
-p {
-  text-align: justify;
-}
-
 img,
 picture,
 video,
@@ -128,27 +124,27 @@ button,
 label {
   font-family: inherit;
   font-size: inherit;
-  /* hyphens: auto; */
+  hyphens: auto;
   background-color: transparent;
   color: inherit;
   display: block;
   appearance: none;
 
-  /* -ms-hyphens: auto;
+  -ms-hyphens: auto;
   -moz-appearance: none;
   -webkit-appearance: none;
-  -webkit-hyphens: auto; */
+  -webkit-hyphens: auto;
 }
 
 body {
   font-size: 100%;
   color: var(--black);
   line-height: 1.4rem;
-  /* hyphens: auto; */
+  hyphens: auto;
   font-smooth: always;
 
-  /* -ms-hyphens: auto;
-  -webkit-hyphens: auto; */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
