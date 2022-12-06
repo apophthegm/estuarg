@@ -30,7 +30,7 @@
   --global-padding: clamp(var(--font-size-s), 5vw, var(--font-size-m));
   --margin-separator: 3rem;
 
-  --header-height: 3rem;
+  --header-height: 3.3rem;
 
 
   /* global border radius */

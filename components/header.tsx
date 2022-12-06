@@ -22,7 +22,7 @@ export const Header = (): ReactElement => {
   return (
     <header className={`${styles.header} ${margin ? styles.margin : ""}`}>
       <Link to="home" offset={-80} className={styles.link}>
-        <Logo width={90} />
+        <Logo height={35} />
       </Link>
 
       <MobileNav />

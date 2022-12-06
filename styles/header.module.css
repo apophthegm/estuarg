@@ -10,6 +10,7 @@
   z-index: 2;
   backdrop-filter: saturate(180%) blur(.4rem);
   min-height: var(--header-height);
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .header_mobile,
@@ -18,7 +19,7 @@
 }
 
 .margin {
-  border-bottom: 1px solid #d9d9d988;
+  box-shadow: 0 0 0 1px #d9d9d988;
 }
 
 .links__container {
@@ -30,6 +31,7 @@
   color: var(--black);
   font-size: 1rem;
   cursor: pointer;
+  display: flex;
 }
 
 @media screen and (max-width: 720px) {
@@ -51,12 +53,13 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
-  background-color: var(--grey);
+  height: 2px;
+  background-image: var(--linear-black-gradient);
   top: 30%;
   left: 0;
   transform: translateY(-30%);
   transition: transform 300ms ease;
+  border-radius: var(--team-border-radius);
 }
 
 .icon::after {
