@@ -98,14 +98,6 @@
   opacity: 1;
 }
 
-.overflow {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  min-height: 100%;
-  max-width: 100vw;
-}
-
 @media screen and (max-width: 550px) {
   .links__container {
     display: none;
