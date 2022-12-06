@@ -50,7 +50,7 @@ const Team = (): ReactElement => {
 }
 
 export const Story = (): ReactElement => (
-  <Element name='about' role={'contentinfo'} className={styles.container}>
+  <Element name='about' role='contentinfo' className={styles.container}>
     <Title title='CONOCE TODO ACERCA DE LA AGENCIA' />
     <Separator
       message='NUESTRA HISTORIA'

@@ -1,25 +1,27 @@
 :root {
   --black: #141414;
   --linear-black-gradient: linear-gradient(180deg, #141414cc, var(--black));
+  --blue: #007CF0;
+  --purple: #7928CA;
   --white: #ffffff;
   --white-shadow: rgba(255 255 255 / 0.8);
   --grey: #666666;
-  --grey-shadow: #66666688;
+  --grey-shadow: #d6d6d6;
 
   /* gradients */
-  --primary-gradient: linear-gradient(90deg, #007CF0 0%, #00DFD8 100%);
+  --primary-gradient: linear-gradient(90deg, var(--blue) 0%, #00DFD8 100%);
   --primary-gradient-shadow: linear-gradient(0deg, #01AFE4 0%, transparent 100%);
-  --secondary-gradient: linear-gradient(90deg, #7928CA 0%, #FF0080 100%);
+  --secondary-gradient: linear-gradient(90deg, var(--purple) 0%, #FF0080 100%);
   --secondary-gradient-shadow: linear-gradient(0deg, #BE14A4 23.55%, transparent 100%);
   --tertiary-gradient: linear-gradient(90deg, #FF4D4D 0%, #F9CB28 100%);
   --tertiary-gradient-shadow: linear-gradient(0deg, #FC8B3B 23.55%, transparent 100%);
 
   /* font sizes */
-  --font-size-xl: 2.5rem;
+  --font-size-xl: 3rem;
   --font-size-l: 1.5rem;
   --font-size-m: 1.2rem;
   --font-size-s: 1rem;
-  --font-size-xs: 0.8rem;
+  --font-size-xs: 0.9rem;
 
   /* font weights */
   --font-weight-bold: 800;
@@ -38,7 +40,7 @@
   --team-border-radius: 1rem;
 
   /* global box shadow */
-  --global-box-shadow: 0px 0px 40px;
+  --global-box-shadow: 0px 0px 10px;
 
   font-size: 16px;
 }
@@ -47,10 +49,9 @@
   margin: 0;
   padding: 0;
   border: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: baseline;
-
-  -webkit-box-sizing: border-box;
 }
 
 img,

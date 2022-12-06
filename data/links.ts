@@ -14,6 +14,8 @@ interface ISocialLinks extends INavLinks {
 interface IPlanLinks extends INavLinks {
   description: string
   price: string
+  benefits: string[]
+  color: string
 }
 
 export const navLinks: INavLinks[] = [
@@ -47,24 +49,45 @@ export const navLinks: INavLinks[] = [
 export const plansLinks: IPlanLinks[] = [
   {
     id: '0',
-    title: 'Plan Básico',
+    title: 'Basic',
     path: '/',
     description: 'Cuenta con los servicios básicos para entrar al país de forma legal.',
-    price: '600 usd'
+    benefits: [
+      'Gestión de trámites para la visa',
+      'Atención personalizada y seguimiento de tu caso',
+      'Expedición del DNI y pasaporte',
+      'Asesoría legal'
+    ],
+    color: 'var(--black)',
+    price: '$600 usd'
   },
   {
     id: '1',
-    title: 'Plan Premium',
+    title: 'Premium',
     path: '/',
     description: 'Llegarás al país con todo lo que necesitas, para vivir y estudiar.',
-    price: '900 usd'
+    benefits: [
+      'Inscripción en la universidad',
+      'Asesoramiento en el curso CBC y UBA XXI (solo aplica para la UBA)',
+      'Gestión y guía en alquiler de vivienda',
+      'Kit estudiantil por todo el año'
+    ],
+    color: 'var(--blue)',
+    price: '$900 usd'
   },
   {
-    id: '1',
-    title: 'Plan Custom',
+    id: '2',
+    title: 'Customizable',
     path: '/',
     description: 'Tú eliges todos los servicios que necesitas y nosotros nos adaptamos a ti.',
-    price: 'A convenir'
+    benefits: [
+      'Asesoría personalizada y seguimiento de tu caso',
+      'Expedición del DNI y pasaporte',
+      'Precio a convenir según tus necesidades',
+      'Total flexibilidad en los servicios'
+    ],
+    color: 'var(--purple)',
+    price: 'Consultar'
   }
 ]
 

@@ -8,7 +8,7 @@ import { Element } from 'react-scroll'
 
 export const Motivate = (): ReactElement => {
   return (
-    <Element name='motivate' role={'contentinfo'} className={styles.container}>
+    <Element name='motivate' role='contentinfo' className={styles.container}>
       <Separator message='MOTÍVATE' cssVariable='secondary-gradient' number='2' />
       <div className={styles.flex_container}>
         <div className={styles.text_container}>

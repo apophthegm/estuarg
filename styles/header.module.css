@@ -111,7 +111,7 @@
   max-width: 100vw;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
   .links__container {
     display: none;
   }

@@ -1,7 +1,7 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react'
 import styles from '@styles/motivate.module.css'
-import testimonies from "data/testimonies";
-import Image from "next/image";
+import testimonies from 'data/testimonies'
+import Image from 'next/image'
 
 export const Testimonials = (): ReactElement => {
   return (
@@ -23,5 +23,5 @@ export const Testimonials = (): ReactElement => {
         }
       </div>
     </div>
-  );
-};
+  )
+}
