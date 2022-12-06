@@ -21,7 +21,7 @@ export const Plans = (): ReactElement => {
       </h3>
       <Title title='Los precios más accesibles del mercado' />
       <div className={styles.plans_container}>
-        {plansLinks.map(({ id, description, path, price, title, benefits, color }) => (
+        {plansLinks.map(({ id, description, path, price, title, benefits, color, callToActionMessage }) => (
           <div key={id} className={`${styles.plan} ${id === '1' ? styles.most_popular : ''}`}>
             {id === '1' && <div className={styles.stack}><p>Más popular</p></div>}
             <div className={styles.header}>
@@ -42,7 +42,7 @@ export const Plans = (): ReactElement => {
             </ul>
             <div className={styles.benefits} style={{ ['--color' as any]: `${color}` }}>
               <Link href={path} className={styles.button}>
-                Quiero este plan
+                {callToActionMessage}
               </Link>
             </div>
           </div>

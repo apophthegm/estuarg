@@ -29,19 +29,22 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(clamp(18rem, 80%, 20rem), 1fr));
   grid-gap: 2rem;
-  max-width: 80rem;
+  max-width: 75rem;
 }
 
 .plan {
   border-radius: var(--team-border-radius);
   border: 1px solid var(--grey-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .most_popular {
   border-color: transparent;
   background: linear-gradient(var(--white), var(--white)) padding-box, var(--primary-gradient) border-box;
   position: relative;
-  box-shadow: var(--global-box-shadow) var(--grey-shadow);
+  box-shadow: var(--plans-box-shadow);
 }
 
 .stack {
@@ -63,7 +66,7 @@
 
 .header,
 .benefits {
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .header {

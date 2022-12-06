@@ -41,6 +41,7 @@
 
   /* global box shadow */
   --global-box-shadow: 0px 0px 10px;
+  --plans-box-shadow: 0px 0px 25px var(--grey-shadow);
 
   font-size: 16px;
 }

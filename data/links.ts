@@ -16,6 +16,7 @@ interface IPlanLinks extends INavLinks {
   price: string
   benefits: string[]
   color: string
+  callToActionMessage: string
 }
 
 export const navLinks: INavLinks[] = [
@@ -59,7 +60,8 @@ export const plansLinks: IPlanLinks[] = [
       'Asesoría legal'
     ],
     color: 'var(--black)',
-    price: '$600 usd'
+    price: '$600 usd',
+    callToActionMessage: 'Quiero este plan'
   },
   {
     id: '1',
@@ -73,7 +75,8 @@ export const plansLinks: IPlanLinks[] = [
       'Kit estudiantil por todo el año'
     ],
     color: 'var(--blue)',
-    price: '$900 usd'
+    price: '$900 usd',
+    callToActionMessage: 'Conoce los beneficios del plan'
   },
   {
     id: '2',
@@ -87,7 +90,8 @@ export const plansLinks: IPlanLinks[] = [
       'Total flexibilidad en los servicios'
     ],
     color: 'var(--purple)',
-    price: 'Consultar'
+    price: 'Consultar',
+    callToActionMessage: 'Ver los servicios disponibles'
   }
 ]
 
