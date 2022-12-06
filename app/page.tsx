@@ -19,9 +19,11 @@ export default function HomePage(): ReactNode {
         <Universities />
         <Story />
         <Motivate />
-        <Testimonials />
-        <Plans />
       </Element>
+      <Testimonials />
+      <div style={{ padding: "0 var(--global-padding)" }}>
+        <Plans />
+      </div>
     </>
   );
 }
