@@ -6,6 +6,7 @@ import diego from '@public/diego.png'
 import yelenka from '@public/yelenka.png'
 import leidy from '@public/leidy.png'
 import Image from 'next/image'
+import { Element } from 'react-scroll'
 
 const Team = (): ReactElement => {
   const members = [
@@ -49,7 +50,7 @@ const Team = (): ReactElement => {
 }
 
 export const Story = (): ReactElement => (
-  <section className={styles.container}>
+  <Element name='about' role={'contentinfo'} className={styles.container}>
     <Title title='CONOCE TODO ACERCA DE LA AGENCIA' />
     <Separator
       message='NUESTRA HISTORIA'
@@ -69,5 +70,5 @@ export const Story = (): ReactElement => (
       lo largo de todo el proceso.
     </p>
     <Team />
-  </section>
+  </Element>
 )

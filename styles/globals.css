@@ -2,6 +2,7 @@
   --black: #141414;
   --linear-black-gradient: linear-gradient(180deg, #141414cc, var(--black));
   --white: #ffffff;
+  --white-shadow: rgba(255 255 255 / 0.8);
   --grey: #666666;
   --grey-shadow: #66666688;
 
@@ -28,6 +29,8 @@
   /* globals separators */
   --global-padding: clamp(var(--font-size-s), 5vw, var(--font-size-m));
   --margin-separator: 3rem;
+
+  --header-height: 3rem;
 
 
   /* global border radius */

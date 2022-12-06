@@ -4,10 +4,11 @@ import clients from '@public/clients.png'
 import styles from '@styles/motivate.module.css'
 import { Separator } from '@components/separator'
 import { Title } from './title'
+import { Element } from 'react-scroll'
 
 export const Motivate = (): ReactElement => {
   return (
-    <section className={styles.container}>
+    <Element name='motivate' role={'contentinfo'} className={styles.container}>
       <Separator message='MOTÍVATE' cssVariable='secondary-gradient' number='2' />
       <div className={styles.flex_container}>
         <div className={styles.text_container}>
@@ -27,6 +28,6 @@ export const Motivate = (): ReactElement => {
           <h3>NUESTROS CLIENTES</h3>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }

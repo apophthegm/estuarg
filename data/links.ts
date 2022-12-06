@@ -20,27 +20,27 @@ export const navLinks: INavLinks[] = [
   {
     id: '0',
     title: 'Inicio',
-    path: '/'
+    path: 'home'
   },
   {
     id: '1',
     title: 'Nosotros',
-    path: '/'
+    path: 'about'
   },
   {
     id: '2',
-    title: 'Precios',
-    path: '/'
+    title: 'Motivación',
+    path: 'motivate'
   },
   {
     id: '3',
-    title: 'Preguntas',
-    path: '/'
+    title: 'Precios',
+    path: 'pricing'
   },
   {
     id: '4',
     title: 'Contacto',
-    path: '/'
+    path: 'contact'
   }
 ]
 
