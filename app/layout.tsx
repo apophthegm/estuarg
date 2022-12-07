@@ -1,7 +1,6 @@
 import '@styles/globals.css'
 import { ReactNode } from 'react'
 import { Inter } from '@next/font/google'
-import { Footer } from '@components/footer'
 
 interface IRootLayout {
   children: ReactNode
@@ -26,7 +25,6 @@ export default function RootLayout ({ children }: IRootLayout): ReactNode {
       </head>
       <body className={interFont.className}>
         {children}
-        <Footer />
       </body>
     </html>
   )

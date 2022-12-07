@@ -4,7 +4,7 @@ import { Separator } from '@components/separator'
 import { Element } from 'react-scroll'
 import { plansLinks } from 'data/links'
 import Link from 'next/link'
-import { Title } from './title'
+import { Title, TitleBig } from './title'
 import { Check } from './icons'
 
 export const Plans = (): ReactElement => {
@@ -13,12 +13,7 @@ export const Plans = (): ReactElement => {
   return (
     <Element name='pricing' role='contentinfo' className={styles.container}>
       <Separator cssVariable='tertiary-gradient' message='PLANES' number='3' />
-      <h3
-        className={styles.title_xl}
-        style={{ ['--content' as any]: `'${plansTitle}'` }}
-      >
-        {plansTitle}
-      </h3>
+      <TitleBig title={plansTitle} />
       <Title title='Los precios más accesibles del mercado' />
       <div className={styles.plans_container}>
         {plansLinks.map(({ id, description, path, price, title, benefits, color, callToActionMessage }) => (
