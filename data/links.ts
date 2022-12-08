@@ -101,14 +101,14 @@ export const plansLinks: IPlanLinks[] = [
 export const contactLinks: ISocialLinks[] = [
   {
     id: "0",
-    title: "(+57) 300 5731373",
-    path: "https://wa.me/573005731373",
+    title: "(+57) 321 6356932",
+    path: "https://wa.me/573216356932",
     icon: Whatsapp,
   },
   {
     id: "1",
-    title: "(+54) 911 2767-8532",
-    path: "https://wa.me/5491127678532",
+    title: "(+54) 911 7641-3099",
+    path: "https://wa.me/5491176413099",
     icon: Whatsapp,
   },
 ];
