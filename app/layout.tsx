@@ -18,7 +18,7 @@ export default function RootLayout ({ children }: IRootLayout): ReactNode {
   return (
     <html lang='es'>
       <head>
-        <title>Viaja. Estudia. Conoce. Convertirte en lo que siempre has soñado. - EstuArg</title>
+        <title>Viaja. Estudia. Conoce. Sé el profesional de tus sueños – EstuArg</title>
         <meta name='description' content='Haz tus sueños realidad, empieza hoy a construir tu futuro con la ayuda de Estuarg, la agencia estudiantil que te ayuda a realizar tus sueños y metas. Estudia en argentina, confía en Estuarg.' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta content='es' httpEquiv='Content-Language' />
