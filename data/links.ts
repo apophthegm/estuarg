@@ -51,7 +51,7 @@ export const plansLinks: IPlanLinks[] = [
   {
     id: "0",
     title: "Basic",
-    path: "/",
+    path: "/plans/basic",
     description:
       "Cuenta con los servicios básicos para entrar al país de forma legal.",
     benefits: [
@@ -67,7 +67,7 @@ export const plansLinks: IPlanLinks[] = [
   {
     id: "1",
     title: "Premium",
-    path: "/",
+    path: "/plans/premium",
     description:
       "Llegarás al país con todo lo que necesitas, para vivir y estudiar.",
     benefits: [
@@ -83,7 +83,7 @@ export const plansLinks: IPlanLinks[] = [
   {
     id: "2",
     title: "Customizable",
-    path: "/",
+    path: "/plans/customizable",
     description:
       "Tú eliges todos los servicios que necesitas y nosotros nos adaptamos a ti.",
     benefits: [

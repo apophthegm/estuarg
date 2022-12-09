@@ -36,7 +36,7 @@ export const Plans = (): ReactElement => {
               ))}
             </ul>
             <div className={styles.benefits} style={{ ['--color' as any]: `${color}` }}>
-              <Link href={path} className={styles.button}>
+              <Link href={path} target='_blank' rel="noopener noreferrer" className={styles.button}>
                 {callToActionMessage}
               </Link>
             </div>
