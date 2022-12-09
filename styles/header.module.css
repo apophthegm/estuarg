@@ -1,0 +1,128 @@
+.header {
+  background-color: var(--white-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  backdrop-filter: saturate(180%) blur(.4rem);
+  min-height: var(--header-height);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.header_mobile,
+.links__container_mobile {
+  display: none;
+}
+
+.margin {
+  box-shadow: 0 0 0 1px #d9d9d988;
+}
+
+.links__container {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.link {
+  color: var(--black);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 0 1rem;
+  }
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  transition: transform 300ms ease;
+  z-index: 2;
+}
+
+.icon::after,
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-image: var(--linear-black-gradient);
+  top: 30%;
+  left: 0;
+  transform: translateY(-30%);
+  transition: transform 300ms ease;
+  border-radius: var(--team-border-radius);
+}
+
+.icon::after {
+  top: 70%;
+  transform: translateY(-70%);
+}
+
+.rotate>.icon::after,
+.rotate>.icon::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rotate>.icon {
+  transform: rotate(45deg);
+}
+
+.rotate>.icon::before {
+  transform: rotate(90deg);
+}
+
+.links__container_mobile {
+  position: absolute;
+  top: calc(var(--header-height) - 1px);
+  right: 0;
+  height: 100vh;
+  backdrop-filter: saturate(180%) blur(.5rem);
+  background-color: var(--white-shadow);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.show_links {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.overflow {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  max-width: 100vw;
+}
+
+@media screen and (max-width: 560px) {
+  .links__container {
+    display: none;
+  }
+
+  .header_mobile,
+  .links__container_mobile {
+    display: flex;
+  }
+
+  .header {
+    backdrop-filter: inherit;
+    background-color: var(--white);
+  }
+}

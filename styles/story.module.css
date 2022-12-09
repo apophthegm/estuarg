@@ -1,0 +1,124 @@
+/* separator circle */
+.separator_container,
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator_container,
+.circle>h3 {
+  margin-top: calc(var(--margin-separator) * 0.5);
+}
+
+.separator_container {
+  width: 100%;
+}
+
+.circle {
+  --size: 2.5rem;
+}
+
+.separator_container>span {
+  width: 0.1rem;
+  height: 5rem;
+}
+
+.circle>span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 50%;
+  line-height: 1rem;
+}
+
+.circle>h3 {
+  font-weight: 600;
+  font-size: var(--font-size-l);
+  line-height: calc(var(--font-size-l) * 1.2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* content */
+.container {
+  margin: var(--margin-separator) auto 0;
+  max-width: 70rem;
+}
+
+.container>p {
+  margin-top: 2rem;
+}
+
+/* team  */
+.team_container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.member_card_container {
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  box-shadow: 0 0 1rem var(--grey-shadow);
+  border-radius: var(--team-border-radius);
+  transition: opacity 300ms ease-in-out;
+}
+
+.member_card_container:hover>.gradient {
+  opacity: 1;
+}
+
+.member_card {
+  padding: .5rem;
+  border-radius: var(--team-border-radius);
+  width: clamp(12rem, 25vw, 15rem);
+  filter: grayscale(1);
+  overflow: hidden;
+  transition: filter 300ms ease-in-out;
+  border: 1px solid transparent;
+  background-color: var(--white);
+  background-clip: padding-box;
+}
+
+
+.member_card:hover {
+  filter: grayscale(0);
+}
+
+.member {
+  width: 100%;
+  overflow: hidden;
+  border-radius: calc(var(--team-border-radius) - 0.2rem);
+  pointer-events: none;
+  user-select: none;
+}
+
+.member_image {
+  transition: transform 0.3s ease-in-out;
+  height: auto;
+}
+
+.member_card:hover>.member>.member_image {
+  transform: scale(1.05);
+}
+
+.member_name {
+  font-weight: 600;
+  text-align: center;
+  margin-top: .5rem;
+}
