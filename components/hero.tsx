@@ -1,5 +1,7 @@
 import styles from '@styles/hero.module.css'
 import { ReactElement } from 'react'
+import NextLink from 'next/link'
+import { Link } from 'react-scroll'
 
 const message = [
   {
@@ -34,12 +36,12 @@ export default function Hero (): ReactElement {
         </h2>
       </div>
       <div className={styles.buttons}>
-        <a className={`${styles.button} ${styles.primary}`} href='http://wa.me/573005731373' target='_blank' rel='noopener noreferrer'>
+        <NextLink className={`${styles.button} ${styles.primary}`} href='/contacto' target='_blank' rel='noopener noreferrer'>
           Contactar
-        </a>
-        <a className={`${styles.button} ${styles.secondary}`} href='http://wa.me/573005731373' target='_blank' rel='noopener noreferrer'>
+        </NextLink>
+        <Link to='pricing' className={`${styles.button} ${styles.secondary}`}>
           Ver precios
-        </a>
+        </Link>
       </div>
     </div>
   )

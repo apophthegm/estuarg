@@ -204,6 +204,7 @@
   padding: 0.5rem var(--font-size-m);
   border-radius: var(--global-border-radius);
   text-align: center;
+  cursor: pointer;
 }
 
 .primary {
