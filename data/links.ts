@@ -116,8 +116,8 @@ export const contactLinks: ISocialLinks[] = [
 export const socialMediaLinks: ISocialLinks[] = [
   {
     id: '0',
-    title: '/estuarglatam',
-    path: 'https://instagram.com/estuarglatam',
+    title: '/estuargasesorias',
+    path: 'https://instagram.com/estuargasesorias',
     icon: Instagram
   },
   {
